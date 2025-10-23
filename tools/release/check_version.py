@@ -24,6 +24,9 @@ def is_this_a_good_version_number(string: str) -> str | None:
         return "Only beta releases are allowed. No alphas."
 
     release = v.release
+
+
+
     expected_major = datetime.now().year % 100
 
     if len(release) not in [2, 3]:
